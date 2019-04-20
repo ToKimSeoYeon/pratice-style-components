@@ -1,28 +1,34 @@
 import React from "react";
 import Box from "../../SimpleComponents/BoxComponents";
-import BackgroundImage from "../../SimpleComponents/BackgroundImageComponents";
+import ImageCard from "./ImageCard";
+import HeadingWithDash from "./HeadingWithDash";
+// import Box, ImageCard, HeadingWithDash from '../../SimpleComponents/
+import ProductTag from "./ProductTag";
+import { FavouriteButton } from "./FavouriteButton";
+import Price from "./Price";
 
-// primitive에서 형식을 가져온다 box, backgroundimage 그게 imagecards다
-const ProductCard = ({ tl, tr, br, bl, src, ratio, ...props }) => (
-  <Box position="relative" {...props}>
-    <BackgroundImage width="100%" ratio={ratio} src={src} />
+const statusText = status =>
+  ({
+    NEW: "New",
+    SALE: "Sale"
+  }[status]);
 
-    <Box position="absolute" top={0} left={0}>
-      {tl}
-    </Box>
-
-    <Box position="absolute" top={20} right={0}>
-      {tr}
-    </Box>
-
-    <Box position="absolute" bottom={0} right={0}>
-      {br}
-    </Box>
-
-    <Box position="absolute" bottom={0} left={0}>
-      {bl}
-    </Box>
-  </Box>
+const ProductCard = ({ shoe, ...props }) => (
+  <ImageCard
+    ratio={803 / 632}
+    src={shoe.image}
+    {...props}
+    tl={shoe.status && <ProductTag>{statusText(shoe.status)}</ProductTag>}
+    tr={<FavouriteButton p={2} m={2} isFavourite={shoe.favourite} />}
+    bl={
+      <Box ml={3} mb={2}>
+        <HeadingWithDash dashWidth={1} fontSize={1} lineHeight="solid" mb={1}>
+          {shoe.name}
+        </HeadingWithDash>
+        <Price {...shoe} />
+      </Box>
+    }
+  />
 );
 
 export default ProductCard;
