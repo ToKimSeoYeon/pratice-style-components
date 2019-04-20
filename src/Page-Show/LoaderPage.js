@@ -1,5 +1,5 @@
 import React from "react";
-import CubeGrid from "../Components/loader-Components/CubeGrid";
+import CubeGrid from "../MixedComponents/loader-Components/CubeGrid";
 
 export default () => {
   return (

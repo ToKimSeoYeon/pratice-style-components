@@ -1,5 +1,5 @@
 import React from "react";
-import Animate from "../Components/Animate";
+import Animate from "../MixedComponents/Animate";
 
 export default () => {
   return <Animate />;

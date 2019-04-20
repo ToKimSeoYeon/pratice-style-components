@@ -1,5 +1,5 @@
 import React from "react";
-import Box from "../Components/box";
+import Box from "../SimpleComponents/BoxComponents";
 
 export default () => {
   return (

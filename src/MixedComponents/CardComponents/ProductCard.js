@@ -1,8 +1,9 @@
 import React from "react";
-import { Box, BackgroundImage } from "../box";
+import Box from "../../SimpleComponents/BoxComponents";
+import BackgroundImage from "../../SimpleComponents/BackgroundImageComponents";
 
 // primitive에서 형식을 가져온다 box, backgroundimage 그게 imagecards다
-export const ImageCard = ({ tl, tr, br, bl, src, ratio, ...props }) => (
+const ProductCard = ({ tl, tr, br, bl, src, ratio, ...props }) => (
   <Box position="relative" {...props}>
     <BackgroundImage width="100%" ratio={ratio} src={src} />
 
@@ -23,3 +24,5 @@ export const ImageCard = ({ tl, tr, br, bl, src, ratio, ...props }) => (
     </Box>
   </Box>
 );
+
+export default ProductCard;
