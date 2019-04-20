@@ -3,5 +3,5 @@
 ##Inspired
 
 - styled-component
-- styled-system
+- [styled-system](https://github.com/styled-system/styled-system)
 - [styled-loader](https://github.com/SaraVieira/styled-loaders)
