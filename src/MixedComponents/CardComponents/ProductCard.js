@@ -14,8 +14,8 @@ const statusText = status =>
     SALE: "Sale"
   }[status]);
 
-// 여기서 props는 ImageCard의 Box를 추가설정 할 수 있게 한다
-const ProductCard = ({ shoe, ...props }) => (
+// 여기서 props는 다른 이미지 url을 불러오는 역할을 한다
+const ProductCard = ({ shoe, borderRadius, ...props }) => (
   <ImageCard
     ratio={803 / 632}
     src={shoe.image}

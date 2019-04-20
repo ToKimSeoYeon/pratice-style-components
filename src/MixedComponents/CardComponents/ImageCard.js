@@ -3,10 +3,9 @@ import Box from "../../SimpleComponents/BoxComponents";
 import BackgroundImage from "../../SimpleComponents/BackgroundImageComponents";
 
 // Card의 전체적인 틀
-
-const ImageCard = ({ tl, tr, br, bl, src, ratio, ...props }) => (
-  <Box position="relative" {...props}>
-    <BackgroundImage width="100%" ratio={ratio} src={src} />
+const ImageCard = ({ tl, tr, br, bl, src, ratio, borderRadius, ...props }) => (
+  <Box position="relative" borderRadius={20} {...props}>
+    <BackgroundImage width="100%" src={src} borderRadius={20} />
 
     <Box position="absolute" top={0} left={0}>
       {tl}

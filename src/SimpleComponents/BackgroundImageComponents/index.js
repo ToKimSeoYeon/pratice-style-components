@@ -1,23 +1,45 @@
-import system from "system-components";
+import styled from "styled-components";
+import {
+  space,
+  color,
+  width,
+  fontSize,
+  height,
+  backgroundSize,
+  backgroundPosition,
+  borderRadius
+} from "styled-system";
 
-const BackgroundImage = system(
+const BackgroundImage = styled.div(
   {
-    width: 1,
-    ratio: 3 / 4,
+    width: 100,
+    height: 350,
     backgroundSize: "cover",
-    backgroundPosition: "center",
-    blacklist: ["src"]
+    backgroundPosition: "center"
   },
-  // core
-  "space",
-  "width",
-  "color",
-  "fontSize",
-  "ratio",
-  "backgroundSize",
-  "backgroundPosition",
+  height,
+  space,
+  color,
+  width,
+  fontSize,
+  backgroundSize,
+  backgroundPosition,
+  borderRadius,
   props => ({
     backgroundImage: props.src ? `url(${props.src})` : undefined
   })
 );
+
+BackgroundImage.propTypes = {
+  // core
+  ...space.propTypes,
+  ...color.propTypes,
+  ...width.propTypes,
+  ...fontSize.propTypes,
+  ...backgroundSize.propTypes,
+  ...backgroundPosition.propTypes,
+  // border
+  ...borderRadius.propTypes
+};
+
 export default BackgroundImage;
