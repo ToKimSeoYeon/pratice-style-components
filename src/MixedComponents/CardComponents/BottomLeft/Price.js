@@ -1,8 +1,6 @@
 import React from "react";
-// import { css } from 'styled-components';
-// import { Text, Span } from '../design-system';
-import Text from "../../SimpleComponents/TextComponents";
-import Span from "../../SimpleComponents/SpanComponents";
+import Text from "../../../SimpleComponents/TextComponents";
+import Span from "../../../SimpleComponents/SpanComponents";
 
 const Price = ({ price, status, salePrice }) => {
   const onSale = status === "SALE";

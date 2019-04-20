@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonTransparent from "./ButtonTransparent";
 
-export const FavouriteButton = ({ isFavourite, ...props }) => (
+const FavouriteButton = ({ isFavourite, ...props }) => (
   <ButtonTransparent color={isFavourite ? "red" : "mid-gray"} {...props}>
     <svg
       viewBox="0 0 24 24"
@@ -14,3 +14,5 @@ export const FavouriteButton = ({ isFavourite, ...props }) => (
     </svg>
   </ButtonTransparent>
 );
+
+export default FavouriteButton;

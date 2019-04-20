@@ -3,7 +3,7 @@ import Grid from "../SimpleComponents/LayoutComponents/Grid";
 import ProductCard from "../MixedComponents/CardComponents";
 import shoes from "../Data/shoes";
 
-// 데이터 입력
+// 데이터 입력 & 주는곳
 export default () => {
   return (
     <Grid

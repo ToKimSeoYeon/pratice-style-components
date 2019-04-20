@@ -2,6 +2,8 @@ import React from "react";
 import Box from "../../SimpleComponents/BoxComponents";
 import BackgroundImage from "../../SimpleComponents/BackgroundImageComponents";
 
+// Card의 전체적인 틀
+
 const ImageCard = ({ tl, tr, br, bl, src, ratio, ...props }) => (
   <Box position="relative" {...props}>
     <BackgroundImage width="100%" ratio={ratio} src={src} />
