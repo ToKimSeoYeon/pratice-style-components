@@ -2,11 +2,8 @@ import React from "react";
 import Box from "../../DeclarePrimitive/BoxComponents";
 import BackgroundImage from "../../DeclarePrimitive/BackgroundImageComponents";
 
-const showlog = () => {
-  console.log("showlog");
-};
 // Card의 전체적인 틀
-const ImageCard = ({ tl, tr, br, bl, src, ratio, borderRadius, ...props }) => (
+const ImageCard = ({ tl, tr, br, bl, src, ...props }) => (
   <Box position="relative" borderRadius={20} {...props}>
     <BackgroundImage width="100%" src={src} borderRadius={20} />
 
@@ -14,7 +11,7 @@ const ImageCard = ({ tl, tr, br, bl, src, ratio, borderRadius, ...props }) => (
       {tl}
     </Box>
 
-    <Box position="absolute" top={20} right={0} onClick={showlog}>
+    <Box position="absolute" top={20} right={0}>
       {tr}
     </Box>
 

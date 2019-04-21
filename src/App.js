@@ -3,6 +3,7 @@ import React, { Component } from "react";
 // import AnimationPage from "./Page-Show/AnimationPage";
 // import LoaderPage from "./Page-Show/LoaderPage";
 import GridCardPage from "./Page-Show/GridCardPage";
+import FlashCardPage from "./Page-Show/FlashCardPage";
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         {/* <AnimationPage /> */}
         {/* <LoaderPage /> */}
         <GridCardPage />
+        <FlashCardPage />
       </>
     );
   }

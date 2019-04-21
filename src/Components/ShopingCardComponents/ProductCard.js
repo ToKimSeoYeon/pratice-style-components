@@ -6,7 +6,7 @@ import FavouriteButton from "./TopRight/FavouriteButton";
 import HeadingWithDash from "./BottomLeft/HeadingWithDash";
 import Price from "./BottomLeft/Price";
 
-//  데이터를 받는 통로를 만듬
+//  GridCardPage에서 데이터를 통쨰로 입력 했다면, 여기선 데이터를 나눠서 주는 역할
 
 const statusText = status =>
   ({
@@ -14,8 +14,8 @@ const statusText = status =>
     SALE: "Sale"
   }[status]);
 
-// 여기서 props는 다른 이미지 url을 불러오는 역할을 한다
-const ProductCard = ({ shoe, borderRadius, ...props }) => (
+// 여기서 props는 다른 backgroundImage의 url을 불러오는 역할을 한다
+const ProductCard = ({ shoe, ...props }) => (
   <ImageCard
     src={shoe.image}
     {...props}

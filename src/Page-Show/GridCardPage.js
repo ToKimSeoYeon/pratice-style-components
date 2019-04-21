@@ -16,7 +16,7 @@ export default () => {
       justifyContent="center"
     >
       {shoes.map(shoe => (
-        <ProductCard key={shoe.id} width="100%" shoe={shoe} borderRadius={4} />
+        <ProductCard key={shoe.id} shoe={shoe} />
       ))}
     </Grid>
   );
