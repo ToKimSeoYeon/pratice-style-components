@@ -1,6 +1,6 @@
 import React from "react";
-import Heading from "../../../SimpleComponents/HeadingComponents";
-import Box from "../../../SimpleComponents/BoxComponents";
+import Heading from "../../../DeclarePrimitive/HeadingComponents";
+import Box from "../../../DeclarePrimitive/BoxComponents";
 
 const HeadingWithDash = ({ dashWidth = 2, children, ...props }) => (
   <Heading {...props}>

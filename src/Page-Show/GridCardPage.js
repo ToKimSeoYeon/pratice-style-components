@@ -1,6 +1,6 @@
 import React from "react";
-import Grid from "../SimpleComponents/LayoutComponents/Grid";
-import ProductCard from "../MixedComponents/CardComponents";
+import Grid from "../DeclarePrimitive/LayoutComponents/Grid";
+import ProductCard from "../Components/ShopingCardComponents";
 import shoes from "../Data/shoes";
 
 // 데이터 입력 & 주는곳

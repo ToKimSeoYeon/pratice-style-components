@@ -1,5 +1,5 @@
 import React from "react";
-import Box from "../../SimpleComponents/BoxComponents";
+import Box from "../../DeclarePrimitive/BoxComponents";
 import ImageCard from "./ImageCard";
 import ProductTag from "./TopLeft/ProductTag";
 import FavouriteButton from "./TopRight/FavouriteButton";
@@ -17,7 +17,6 @@ const statusText = status =>
 // 여기서 props는 다른 이미지 url을 불러오는 역할을 한다
 const ProductCard = ({ shoe, borderRadius, ...props }) => (
   <ImageCard
-    ratio={803 / 632}
     src={shoe.image}
     {...props}
     tl={shoe.status && <ProductTag>{statusText(shoe.status)}</ProductTag>}
