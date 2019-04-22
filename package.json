@@ -4,13 +4,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/runtime": "^7.4.3",
     "animated-styled-components": "^0.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-icons": "^3.6.1",
     "react-scripts": "2.1.8",
+    "react-spring": "^8.0.19",
     "styled-components": "^4.2.0",
     "styled-system": "^4.1.0",
+    "styled-system-html": "^2.0.8",
     "system-components": "^3.0.3"
   },
   "scripts": {

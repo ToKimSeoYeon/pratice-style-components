@@ -4,6 +4,7 @@ import React, { Component } from "react";
 // import LoaderPage from "./Page-Show/LoaderPage";
 import GridCardPage from "./Page-Show/GridCardPage";
 import FlashCardPage from "./Page-Show/FlashCardPage";
+import SlidingLoginPage from "./Page-Show/SlidingLoginPage";
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         {/* <LoaderPage /> */}
         <GridCardPage />
         <FlashCardPage />
+        <SlidingLoginPage />
       </>
     );
   }
