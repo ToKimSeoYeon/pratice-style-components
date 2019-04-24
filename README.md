@@ -1,4 +1,4 @@
-# All Styled Components
+# Practice Styled Components
 
 ##Inspired
 
