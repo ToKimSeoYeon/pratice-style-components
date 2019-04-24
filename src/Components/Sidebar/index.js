@@ -13,18 +13,29 @@ const MenuList = styled(A)`
   bordercolor: white;
 `;
 
-export default props => {
-  return (
-    <Menu right>
-      <MenuList href="/">Home</MenuList>
+class Sidebar extends React.Component {
+  state = {
+    isOpen: false
+  };
 
-      <MenuList href="/">Home</MenuList>
+  menuToggle() {
+    this.setState({ isOpen: !this.state.isOpen });
+  }
+  render() {
+    return (
+      <Menu right isOpen={this.state.isOpen}>
+        <MenuList href="/">Home</MenuList>
 
-      <MenuList href="/">Home</MenuList>
+        <MenuList href="/">Home</MenuList>
 
-      <MenuList href="/">Home</MenuList>
+        <MenuList href="/">Home</MenuList>
 
-      <MenuList href="/">Home</MenuList>
-    </Menu>
-  );
-};
+        <MenuList href="/">Home</MenuList>
+
+        <MenuList href="/">Home</MenuList>
+      </Menu>
+    );
+  }
+}
+
+export default Sidebar;
